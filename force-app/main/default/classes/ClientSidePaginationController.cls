@@ -10,7 +10,7 @@ public with sharing class ClientSidePaginationController {
 
     @AuraEnabled(cacheable=false)
     public static List<DataTableWrapper>  fetchRecords(){
-        return getRandomEmployees(100);
+        return getRandomEmployees(1000);
     }
 
     private static  List<DataTableWrapper>  getRandomEmployees(Integer recToReturn){
